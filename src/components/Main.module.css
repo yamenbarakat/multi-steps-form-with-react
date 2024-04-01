@@ -1,0 +1,22 @@
+.main {
+  max-width: 500px;
+  background-color: var(--white);
+  padding: 35px 25px;
+  margin: 0 15px;
+  border-radius: 10px;
+}
+
+@media (min-width: 530px) {
+  .main {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 994px) {
+  .main {
+    width: 420px;
+    padding: 35px 0 0;
+    border-radius: 0;
+    position: relative;
+  }
+}

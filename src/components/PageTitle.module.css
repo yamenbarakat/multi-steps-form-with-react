@@ -1,0 +1,20 @@
+.heading {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.descPage {
+  color: var(--cool-gray);
+  line-height: 1.5;
+  font-size: 17px;
+}
+
+@media (min-width: 994px) {
+  .heading {
+    font-size: 28px;
+  }
+
+  .descPage {
+    font-size: 15px;
+  }
+}

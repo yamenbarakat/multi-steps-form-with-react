@@ -1,0 +1,56 @@
+:root {
+  --marine-blue: hsl(213, 96%, 18%);
+  --white: hsl(0, 0%, 100%);
+  --light-blue: hsl(206, 94%, 87%);
+  --light-gray: hsl(229, 24%, 87%);
+  --magnolia: hsl(217, 100%, 97%);
+  --cool-gray: hsl(231, 11%, 63%);
+  --strawberry: hsl(354, 84%, 57%);
+  --purplish-blue: hsl(243, 100%, 62%);
+  --alabaster: hsl(231, 100%, 99%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: var(--magnolia);
+  height: 100dvh;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+}
+
+::placeholder {
+  color: var(--cool-gray);
+}
+
+input {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+@media (min-width: 994px) {
+  /* all steps */
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .app {
+    display: flex;
+    background-color: var(--white);
+    padding: 15px;
+    width: 850px;
+    height: 530px;
+    border-radius: 10px;
+  }
+}

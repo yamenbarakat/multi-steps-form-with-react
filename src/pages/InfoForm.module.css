@@ -1,0 +1,41 @@
+.box {
+  margin-top: 30px;
+  position: relative;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+
+.error {
+  position: absolute;
+  right: 0;
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: var(--strawberry);
+  font-weight: bold;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid var(--light-gray);
+  border-radius: 4px;
+  outline: none;
+}
+
+.form .required {
+  border: 1px solid var(--strawberry);
+}
+
+@media (min-width: 994px) {
+  .form label {
+    margin-bottom: 6px;
+  }
+
+  .form .input {
+    margin-top: 30px;
+  }
+}

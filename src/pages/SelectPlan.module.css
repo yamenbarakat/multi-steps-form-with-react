@@ -1,0 +1,108 @@
+.plans {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border: 1px solid var(--light-gray);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.plan:hover {
+  border: 1px solid var(--marine-blue);
+}
+
+.plans :global(.chosen) {
+  border: 1px solid var(--marine-blue);
+  background-color: var(--magnolia);
+}
+
+.plan h3 {
+  margin: 0;
+}
+
+.plan span {
+  display: block;
+  margin-top: 6px;
+}
+
+.price {
+  color: var(--cool-gray);
+}
+
+.freeOffer {
+  color: var(--marine-blue);
+  font-size: 14px;
+}
+
+.planDuration {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 6px;
+  background-color: var(--magnolia);
+  font-size: 14px;
+  color: var(--cool-gray);
+  font-weight: bold;
+}
+
+.planDuration :global(.chosen) {
+  color: var(--marine-blue);
+}
+
+.indecator {
+  background-color: var(--marine-blue);
+  border-radius: 50px;
+  width: 34px;
+  height: 18px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.indecator span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: var(--white);
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.indecator :global(.mo) {
+  transform: translateX(0);
+}
+
+.indecator :global(.yr) {
+  transform: translateX(16px);
+}
+
+@media (min-width: 994px) {
+  .plans {
+    flex-direction: row;
+    font-size: 14px;
+    margin: 30px 0;
+  }
+
+  .plan {
+    flex-direction: column;
+    flex: 1;
+    height: 160px;
+    font-size: 13px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .free-offer {
+    font-size: 13px;
+  }
+}
