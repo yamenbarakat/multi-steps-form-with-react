@@ -40,6 +40,7 @@ Users should be able to:
 - React.js
 - Redux-toolkit
 - React-Router
+- react form hook
 - Mobile-first workflow
 
 ## Author
